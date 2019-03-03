@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pregunta5">
+    tools:context=".Pregunta1">
 
     <TextView
         android:id="@+id/textView2"
@@ -14,7 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="¿Qué tipo de sala prefiere?"
+        android:text="¿Con qué frecuencia acudes al cine?"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3D"
+            android:text="1 vez al mes"
             android:textSize="18sp" />
 
         <RadioButton
@@ -66,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sala normal"
+            android:text="1 vez cada semana"
             android:textSize="18sp" />
 
         <RadioButton
@@ -74,9 +74,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Macro XE"
+            android:text="Más de una vez a la semana"
             android:textSize="18sp" />
 
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Casi nunca"
+            android:textSize="18sp" />
     </RadioGroup>
 
     <Button
@@ -88,13 +95,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
-        android:text="Finalizar"
+        android:text="Siguiente"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.65999997" />
 
     <TextView
         android:id="@+id/textView"
@@ -104,7 +111,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="5/5"
+        android:text="1/5"
         android:textAlignment="textEnd"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/textView2"

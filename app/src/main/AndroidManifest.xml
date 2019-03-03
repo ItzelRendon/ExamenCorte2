@@ -16,7 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Pregunta5"></activity>
+        <activity android:name=".Pregunta5" />
+        <activity android:name=".Pregunta1" />
+        <activity android:name=".Pregunta2" />
+        <activity android:name=".Pregunta3" />
+        <activity android:name=".Pregunta4" />
+        <activity android:name=".Resultado"></activity>
     </application>
 
 </manifest>
