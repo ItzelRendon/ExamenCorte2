@@ -24,8 +24,12 @@ public class Pregunta2 extends AppCompatActivity {
         opc3 = (RadioButton) findViewById(R.id.opc3);
         opc4 = (RadioButton) findViewById(R.id.opc4);
 
-        Bundle bundle = getIntent().getExtras();
-        pregunta1 = bundle.getString("pregunta1");
+        try {
+            Bundle bundle = getIntent().getExtras();
+            pregunta1 = bundle.getString("pregunta1");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     public void sig(View v)
     {
