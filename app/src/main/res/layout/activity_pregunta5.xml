@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.19">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/opc1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
             android:textSize="18sp" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/opc2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -70,7 +70,7 @@
             android:textSize="18sp" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/opc3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -88,6 +88,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
+        android:onClick="sig"
         android:text="Finalizar"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
