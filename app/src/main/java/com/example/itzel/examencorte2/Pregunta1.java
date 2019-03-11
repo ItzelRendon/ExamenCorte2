@@ -43,6 +43,7 @@ public class Pregunta1 extends AppCompatActivity {
                 Intent ventana = new Intent(this, Pregunta2.class);
                 ventana.putExtra("pregunta1", ""+opcion);
                 startActivity(ventana);
+                finish();
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -50,8 +50,6 @@ public class Pregunta5 extends AppCompatActivity {
             if(opcion == 0) {
                 Toast.makeText(this, "Seleccione una opción", Toast.LENGTH_SHORT).show();
             }else {
-                Intent ventana = new Intent(this, Resultado.class);
-
                 AdminSQLite admin = new AdminSQLite(this, "administracion", null, 1);
                 SQLiteDatabase bd = admin.getWritableDatabase();
                 ContentValues registro = new ContentValues();
@@ -62,7 +60,9 @@ public class Pregunta5 extends AppCompatActivity {
                 registro.put("pregunta5", ""+opcion);
                 bd.insert("preguntas", null, registro);
                 bd.close();
-                startActivity(ventana);
+                Intent ventanaFinal = new Intent(this, Final.class);
+                startActivity(ventanaFinal);
+                finish();
             }
         } catch (Exception e) {
             e.printStackTrace();

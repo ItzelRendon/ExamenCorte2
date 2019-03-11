@@ -1,9 +1,11 @@
 package com.example.itzel.examencorte2;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -86,5 +88,16 @@ public class Resultado extends AppCompatActivity {
     public int porcentaje(int valor)
     {
         return (valor * 100)/tamanio;
+    }
+
+    public void salir(View view){
+        try {
+            Intent ventanaFinal = new Intent(this, MainActivity.class);
+            startActivity(ventanaFinal);
+            finish();
+
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
     }
 }

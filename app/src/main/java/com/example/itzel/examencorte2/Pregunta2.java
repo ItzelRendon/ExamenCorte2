@@ -50,6 +50,7 @@ public class Pregunta2 extends AppCompatActivity {
                 ventana.putExtra("pregunta1", pregunta1);
                 ventana.putExtra("pregunta2", ""+opcion);
                 startActivity(ventana);
+                finish();
             }
         } catch (Exception e) {
             e.printStackTrace();
